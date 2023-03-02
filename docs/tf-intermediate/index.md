@@ -59,7 +59,7 @@ name: what-even-is-module
 # What is a Terraform Module?
 .center[![:scale 90%](../images/aws_network_module.png)]
 
-Modules are reusable units of Terraform code that hide unnecessary complexity from the user. This one creates a standard network configuration on Google Cloud Platform.
+Modules are reusable units of Terraform code that hide unnecessary complexity from the user. This one creates a standard network configuration on AWS.
 
 ???
 **You'll get to use this module in the lab. If you've ever built out a VPC by hand you know that it's not a super simple process. You need to configure the correct network routes, set up your subnets, internet gateways and a bunch of other settings to get it right. This VPC module is meant to give you a standard set of inputs that you can use to configure a best-practice VPC with public and/or private subnets. This saves you the trouble of having to go write all that terraform code yourself.**
