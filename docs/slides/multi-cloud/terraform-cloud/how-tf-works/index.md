@@ -16,7 +16,7 @@ background-size: cover
 
 .footer[
 
-- Copyright © 2021 HashiCorp
+- Copyright © 2023 HashiCorp
 ]
 
 ---
@@ -244,40 +244,6 @@ Terraform does its best to add, delete, change, or replace existing resources ba
 -/+ replace
 ~   update in-place
 ```
-
----
-name: state-quiz
-class: compact
-# Terraform State Quiz
-| Configuration           | State                   | Reality                 | Operation |
-| ----------------------- | ----------------------- | ----------------------- |:---------:|
-| google_compute_instance |                         |                         |    ???    |
-| google_compute_instance | google_compute_instance |                         |    ???    |
-| google_compute_instance | google_compute_instance | google_compute_instance |    ???    |
-|                         | google_compute_instance | google_compute_instance |    ???    |
-|                         |                         | google_compute_instance |    ???    |
-|                         | google_compute_instance |                         |    ???    |
-
-
-???
-What happens in each scenario? Discuss.
-
----
-name: state-quiz-answers
-class: compact
-# Terraform State Quiz
-| Configuration           | State                   | Reality                 | Operation    |
-| ----------------------- | ----------------------- | ----------------------- |:------------:|
-| google_compute_instance |                         |                         | create       |
-| google_compute_instance | google_compute_instance |                         | create       |
-| google_compute_instance | google_compute_instance | google_compute_instance | no-op        |
-|                         | google_compute_instance | google_compute_instance | delete       |
-|                         |                         | google_compute_instance | no-op        |
-|                         | google_compute_instance |                         | update state |
-
-
-???
-What happens in each scenario? Discuss.
 
 ---
 name: tf-resolves-state

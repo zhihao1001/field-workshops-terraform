@@ -16,7 +16,7 @@ background-size: cover
 
 .footer[
 
-- Copyright © 2021 HashiCorp
+- Copyright © 2023 HashiCorp
 ]
 
 ---

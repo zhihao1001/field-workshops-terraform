@@ -16,7 +16,7 @@ background-size: cover
 
 .footer[
 
-- Copyright © 2021 HashiCorp
+- Copyright © 2023 HashiCorp
 ]
 
 ---
@@ -57,7 +57,7 @@ name: agenda
 ---
 name: what-even-is-module
 # What is a Terraform Module?
-.center[![:scale 90%](../images/gcp_network_module.png)]
+.center[![:scale 90%](../images/aws_network_module.png)]
 
 Modules are reusable units of Terraform code that hide unnecessary complexity from the user. This one creates a standard network configuration on Google Cloud Platform.
 
